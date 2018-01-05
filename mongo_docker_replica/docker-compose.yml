@@ -1,0 +1,57 @@
+version: "2"
+services:
+  mongo1:
+    container_name: mongod1_replica1
+    build:
+      context: .
+      dockerfile: mongo.Dockerfile
+    #mem_limit: 256m
+    ports:
+      - '28001:27017'
+    networks:
+      - my_net_mongo
+    restart: always
+    volumes:
+      - ./data/mongod1:/data/db
+  mongo2:
+    container_name: mongod2_replica1
+    build:
+      context: .
+      dockerfile: mongo.Dockerfile
+    #mem_limit: 256m
+    ports:
+      - '28002:27017'
+    networks:
+      - my_net_mongo
+    restart: always
+    volumes:
+      - ./data/mongod2:/data/db
+  mongo3:
+    container_name: mongod3_replica1
+    build:
+      context: .
+      dockerfile: mongo.Dockerfile
+    #mem_limit: 256m
+    ports:
+      - '28003:27017'
+    networks:
+      - my_net_mongo
+    restart: always
+    volumes:
+      - ./data/mongod3:/data/db
+  mongo4:
+    container_name: mongod4_replica1
+    build:
+      context: .
+      dockerfile: mongo.Dockerfile
+    #mem_limit: 256m
+    ports:
+      - '28004:27017'
+    networks:
+      - my_net_mongo
+    restart: always
+    volumes:
+      - ./data/mongod4:/data/db
+networks:
+  my_net_mongo:
+    driver: bridge
