@@ -5,13 +5,13 @@ mkdir logs
 mkdir data/mongod1
 mkdir data/mongod2
 mkdir data/mongod3
-mkdir data/mongod_arbitro
+mkdir data/mongod4
 
 echo "Corriendo procesos mongod..."
 mongod --config configuracion/mongod1_replica1.conf &
 mongod --config configuracion/mongod2_replica1.conf &
 mongod --config configuracion/mongod3_replica1.conf &
-mongod --config configuracion/mongod_arbitro_replica1.conf &
+mongod --config configuracion/mongod4_replica1.conf &
 
 echo "Esperando 8 segundos..."
 sleep 8

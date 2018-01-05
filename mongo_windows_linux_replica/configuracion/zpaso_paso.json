@@ -1,7 +1,7 @@
 mongod --config mongod1_replica1.conf
 mongod --config mongod2_replica1.conf
 mongod --config mongod3_replica1.conf
-mongod --config mongod_arbitro_replica1.conf
+mongod --config mongod4_replica1.conf
 
 
 mongo --port 20001
