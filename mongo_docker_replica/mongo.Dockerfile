@@ -8,4 +8,4 @@ RUN chown mongodb:mongodb /etc/mongodb/conf.d/mongodb-keyfile.key && chmod 400 /
 
 WORKDIR /etc/mongodb/conf.d
 
-CMD ["-f","mongod_replica1.conf", "--auth"]
+CMD ["-f","mongod_replica1.conf"]

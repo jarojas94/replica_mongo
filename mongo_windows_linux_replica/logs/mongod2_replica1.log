@@ -1,0 +1,12 @@
+2018-01-10T00:26:59.085-0500 I CONTROL  [initandlisten] MongoDB starting : pid=29543 port=27002 dbpath=/home/jairorb/Dropbox/U/OAS/Acts/Personal/cursoMongo/replica_mongo/mongo_windows_linux_replica/./data/mongod2 64-bit host=s120181f22g.udistritaloas.edu.co
+2018-01-10T00:26:59.085-0500 I CONTROL  [initandlisten] db version v3.6.1
+2018-01-10T00:26:59.085-0500 I CONTROL  [initandlisten] git version: 025d4f4fe61efd1fb6f0005be20cb45a004093d1
+2018-01-10T00:26:59.085-0500 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-01-10T00:26:59.085-0500 I CONTROL  [initandlisten] modules: none
+2018-01-10T00:26:59.085-0500 I CONTROL  [initandlisten] build environment:
+2018-01-10T00:26:59.085-0500 I CONTROL  [initandlisten]     distarch: x86_64
+2018-01-10T00:26:59.085-0500 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-01-10T00:26:59.085-0500 I CONTROL  [initandlisten] options: { config: "configuracion/mongod2_replica1.conf", net: { bindIp: "127.0.0.1,10.20.0.181,10.20.0.1", port: 27002 }, processManagement: { fork: true }, replication: { replSetName: "replica1" }, security: { authorization: "enabled", keyFile: "./configuracion/mongodb-keyfile.key" }, storage: { dbPath: "./data/mongod2", engine: "wiredTiger", journal: { enabled: true } }, systemLog: { destination: "file", logAppend: true, path: "./logs/mongod2_replica1.log" } }
+2018-01-10T00:26:59.085-0500 E STORAGE  [initandlisten] Failed to set up listener: SocketException: Cannot assign requested address
+2018-01-10T00:26:59.086-0500 I CONTROL  [initandlisten] now exiting
+2018-01-10T00:26:59.086-0500 I CONTROL  [initandlisten] shutting down with code:48
